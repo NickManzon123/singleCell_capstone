@@ -1,7 +1,8 @@
 #include "Arduino.h"
-#include "bms/daly-bms-uart.h"
+#include "daly-bms-uart.h"
 #include <HardwareSerial.h>
 
+HardwareSerial mySerial = HardwareSerial(2);
 static Daly_BMS_UART bms(mySerial);
 
 #define DALY_RX 16
